@@ -1,0 +1,11 @@
+mixin feedback(item) 
+    .feedback(class="py-[28px] px-[32px]")
+        .inner-star(class="flex gap-[6px]") 
+            - for(var i = 1; i <= item.stars; i++) 
+                i(class="fa fa-star checked text-[#FFC633]")
+            - for(var j = item.stars+1; j <= 5; j++)
+                i(class="fa-regular fa-star")
+        .inner-sub(class="mt-[15px] mb-[12px]")
+            p(class="font-[700] md:text-[20px] inline-block mr-[4px] text-[16px]") #{item.sub}
+            i(class="fa-solid fa-check bg-[#01AB31] text-white rounded-[50%] p-[2px]")
+        .inner-content(class="text-[#00000099] font-[400] xl:text-[16px] text-[14px]") #{item.content}
