@@ -8,6 +8,9 @@ html(lang="en")
         script(src="https://cdn.tailwindcss.com")
         link(rel="stylesheet" href="assets/css/style.css")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css")
+        link(rel="stylesheet", href="https://unpkg.com/aos@2.3.1/dist/aos.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.css")
         script(src="tailwind.config.js")
     body 
         //- Top header
@@ -42,30 +45,30 @@ html(lang="en")
                         i(class="fa-regular fa-user")
         //- End Header
         //- Section 1
-        .section1(class="bg-[#F2F0F1] ")
+        .section1(class="bg-[#F2F0F1]")
             div(class="container mx-auto px-[16px]")
                 .inner-wrap(class="md:flex items-center overflow-hidden")
                     .inner-content(class="md:w-[50%] lg:pt-[0px] pt-[40px] md:pb-[13px] pb-0")
-                        h1.content-title(class="xl:text-[48px] lg:text-[32px] md:text-[29px] sm:text-[40px] text-[30px] font-[900] text-main") CHUYÊN THỜI TRANG PHONG CÁCH, HIỆN ĐẠI
-                        p.inner-desc(class="xl:text-[16px] text-[14px] font=[400] text-[#00000099] xl:mt-[30px] mt-[20px]") Chúng tôi chuyên cung cấp nhiều loại quần áo được chế tác tỉ mỉ, được thiết kế để làm nổi bật cá tính của bạn và đáp ứng phong cách của bạn.
-                        a.button(href="#" class="bg-main block justify-center text-white mx-auto md:inline-flex flex py-[16px] px-[65px] rounded-[62px] xl:my-[50px] my-[30px]") Xem ngay
+                        h1.content-title(class="xl:text-[48px] lg:text-[32px] md:text-[29px] sm:text-[40px] text-[30px] font-[900] text-main" data-aos="fade-up" data-aos-duration="800") CHUYÊN THỜI TRANG PHONG CÁCH, HIỆN ĐẠI
+                        p.inner-desc(class="xl:text-[16px] text-[14px] font=[400] text-[#00000099] xl:mt-[30px] mt-[20px]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150") Chúng tôi chuyên cung cấp nhiều loại quần áo được chế tác tỉ mỉ, được thiết kế để làm nổi bật cá tính của bạn và đáp ứng phong cách của bạn.
+                        a.button(href="#" class="bg-main block justify-center text-white mx-auto md:inline-flex flex py-[16px] px-[65px] rounded-[62px] xl:my-[50px] my-[30px]" data-aos="fade-up" data-aos-duration="800" data-aos-delay ="300") Xem ngay
                         ul.stats(class="flex justify-center xl:text-[40px] lg:text-[24px] md:text-[18px] text-[24px] font-[700] text-main flex-wrap sm:gap-x-[0] sm:gap-y-[0] gap-x-[60px] gap-y-[10px]")
-                            li(class="md:border-r-[1px] md:border-[#0000001A] lg:pr-[32px] lg:mr-[32px] sm:pr-[16px] pr-0 mr-[16px] md:text-left text-center sm:pl-0 pl-[55px]") 
+                            li(class="md:border-r-[1px] md:border-[#0000001A] lg:pr-[32px] lg:mr-[32px] sm:pr-[16px] pr-0 mr-[16px] md:text-left text-center sm:pl-0 pl-[55px]"  data-aos="fade-up" data-aos-duration="800" data-aos-delay ="450") 
                                 div.figure(class="") 200+
                                 div.categ(class="xl:text-[16px] text-[12px] font-[400] text-[#00000099]") Thương Hiệu 
-                            li(class="md:border-r-[1px] md:border-[#0000001A] lg:pr-[32px] lg:mr-[32px] pr-[16px] mr-[16px] md:text-left text-center") 
+                            li(class="md:border-r-[1px] md:border-[#0000001A] lg:pr-[32px] lg:mr-[32px] pr-[16px] mr-[16px] md:text-left text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay ="600") 
                                 div.figure(class="") 2,000+
                                 div.categ(class="xl:text-[16px] text-[12px] font-[400] text-[#00000099]") Sản Phẩm Chất Lượng 
-                            li(class="md:text-left text-center") 
+                            li(class="md:text-left text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay ="750") 
                                 div.figure(class="") 30,000+
                                 div.categ(class="xl:text-[16px] text-[12px] font-[400] text-[#00000099]") Khách Hàng     
-                    .inner-image(class="flex-1")
+                    .inner-image(class="flex-1"  data-aos="fade-up" data-aos-duration="800")
                         img(src="assets/images/section1-main.jpg" class="w-[100%] ")
             //- End Section 1
             //- Section2
-        .brand(class="bg-main py-[43px]")
+        .brand(class="bg-main py-[43px] ")
             div(class="container mx-auto px-[16px]")
-                .inner-wrap(class="flex sm:gap-x-[60px] gap-x-[35px] gap-y-[30px] justify-center flex-wrap")
+                .inner-wrap(class="flex sm:gap-x-[60px] gap-x-[35px] gap-y-[30px] justify-center flex-wrap viewerSection2")
                     img(src="assets/images/brands/versace.png", alt=""  class="mx-auto sm:h-[32px] h-[22px]")
                     img(src="assets/images/brands/zara.png", alt=""  class="mx-auto sm:h-[32px] h-[22px]")
                     img(src="assets/images/brands/gucci.png", alt=""  class="mx-auto sm:h-[32px] h-[22px]")
@@ -77,13 +80,37 @@ html(lang="en")
         .section3(class="md:my-[62px] my-[40px] border-[#0000001A] border-b-[1px] md:pb-[64px] pb-[40px]")
             div(class="container mx-auto px-[16px] text-center")
                 h2.inner-title(class="sm:text-[48px] text-[32px] font-[700] text-center md:mb-[54px] mb-[32px]") THỜI TRANG MỚI
-                .inner-wrap(class="flex sm:justify-start lg:justify-start md:justify-center justify-center gap-[20px] flex-wrap  ")
+                .inner-wrap(class="flex sm:justify-start lg:justify-start md:justify-center justify-center gap-[20px] flex-wrap lg:hidden flex ")
                     +product-item("assets/images/section3/p1.jpg", "Áo Thun Nam Đơn Giản", "120.000đ")
                     +product-item("assets/images/section3/p2.jpg", "Quần Jean Nam Phong Cách", "480.000đ", "600.000đ", "-20%")
                     +product-item("assets/images/section3/p3.jpg", "Áo Sơ Mi Caro", "220.000đ")
                     +product-item("assets/images/section3/p4.jpg", "Áo Thun Nam Sọc Cam", "126.000đ", "180.000đ", "-30%")
+                    
                 
-                .expand(class="font-[500] md:inline-flex  text-main rounded-[62px] border-[1px] border-[#0000001A] py-[16px] px-[63px] mx-auto md:mt-[40px] mt-[30px] text-center") Xem tất cả
+                
+                div(class="swiper mySwiper swiperSection3 h-[500px] lg:block hidden")
+                    div(class="swiper-wrapper")
+                        div(class="swiper-slide")
+                            +product-item("assets/images/section3/p1.jpg", "Áo Thun Nam Đơn Giản", "120.000đ")
+                        div(class="swiper-slide")
+                            +product-item("assets/images/section3/p2.jpg", "Quần Jean Nam Phong Cách", "480.000đ", "600.000đ", "-20%")
+                        div(class="swiper-slide")
+                            +product-item("assets/images/section3/p3.jpg", "Áo Sơ Mi Caro", "220.000đ")
+                        div(class="swiper-slide")
+                            +product-item("assets/images/section3/p4.jpg", "Áo Thun Nam Sọc Cam", "126.000đ", "180.000đ", "-30%")
+                        div(class="swiper-slide")
+                            +product-item("assets/images/section3/p1.jpg", "Áo Thun Nam Đơn Giản", "120.000đ")
+                        div(class="swiper-slide")
+                            +product-item("assets/images/section3/p2.jpg", "Quần Jean Nam Phong Cách", "480.000đ", "600.000đ", "-20%")
+                        div(class="swiper-slide")
+                            +product-item("assets/images/section3/p3.jpg", "Áo Sơ Mi Caro", "220.000đ")
+                        div(class="swiper-slide")
+                            +product-item("assets/images/section3/p4.jpg", "Áo Thun Nam Sọc Cam", "126.000đ", "180.000đ", "-30%")
+                    div(class="swiper-pagination")
+                    div(class="swiper-button-next")
+                    div(class="swiper-button-prev")
+                .expand(class="font-[500] md:inline-flex text-main rounded-[62px] border-[1px] border-[#0000001A] py-[16px] px-[63px] mx-auto md:mt-[40px] mt-[30px] text-center") Xem tất cả
+
         //- End Section3
         //- Section4
         .section4(class="border-[#0000001A] ")
@@ -204,5 +231,8 @@ html(lang="en")
                         img(src="assets/images/footer/p5.svg", alt="" class="w-[47px] h-[30px] bg-white rounded-[5px] p-[7px] object-contain")
                         
 
-
+    script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+    script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.min.js")
+    script(src="assets/js/script.js")
         //- End Footer
